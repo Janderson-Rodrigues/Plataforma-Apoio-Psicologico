@@ -13,17 +13,15 @@ const body = () => {
       </p>
     </header>
 
-    {/* Main Section */}
-    <main className="text-center py-16">
+    <div className="text-center py-16">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-3xl font-bold">
-          A PsyMeet fornece terapia online para mais de
+          A Plataforma Apoio Psicologico fornece terapia online para mais de
         </h2>
         <p className="text-6xl font-extrabold text-black mt-4">3 milhões</p>
         <p className="text-lg text-gray-600">de pessoas por ano</p>
       </div>
 
-      {/* Highlight Section */}
       <section className="mt-16">
         <h2 className="text-3xl font-bold">
           A <span className="bg-yellow-300 px-1">PsyMeet</span> é{" "}
@@ -31,13 +29,12 @@ const body = () => {
           online
         </h2>
         <p className="mt-4 max-w-xl mx-auto text-gray-700">
-          A PsyMeet existe para facilitar o acesso de pessoas em situação de
+          A Plataforma Apoio Psicologico para facilitar o acesso de pessoas em situação de
           vulnerabilidade socioeconômica a psicólogos treinados que estão
           prontos para cuidar da sua saúde mental.
         </p>
       </section>
 
-      {/* Call to Action */}
       <div className="mt-16 bg-gray-100 p-8 rounded-lg shadow-md">
         <p className="text-xl font-bold">
           Garanta sua vaga social online hoje mesmo sem sair de casa!
@@ -46,7 +43,7 @@ const body = () => {
           Clique aqui!
         </button>
       </div>
-    </main>
+    </div>
   </div>
   )
 }
