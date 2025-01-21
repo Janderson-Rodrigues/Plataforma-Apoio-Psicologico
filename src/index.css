@@ -9,3 +9,8 @@
 ::-webkit-scrollbar{
     @apply hidden 
 }
+
+
+::-webkit-scrollbar {
+    @apply hidden
+}
