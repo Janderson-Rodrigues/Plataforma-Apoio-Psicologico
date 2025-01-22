@@ -3,6 +3,7 @@ import {assets} from '../assets/assets'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 import Perfil from "../images/perfil.png"
+import Psicologo from '../images/psicologo.png'
 
 const Navbar = () => {
 
