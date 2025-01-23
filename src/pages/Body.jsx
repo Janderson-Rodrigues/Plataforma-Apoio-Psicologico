@@ -42,7 +42,7 @@ const body = () => {
           Como funciona a terapia online
         </h2>
         <p className="mt-4 text-gray-700">
-        A Plataforma Apoio Psicológico oferece um meio simples e direto de contatar psicólogos profissionais, procure um especialista de acordo com área de atuação e entre em contato imediatamente para agendar seu atendimento!Nosso serviço foi pensado para ser acessível a quem mais precisa: você!
+        A Plataforma Apoio Psicológico oferece um meio simples e direto de contatar psicólogos profissionais, procure um especialista de acordo com área de atuação e entre em contato imediatamente para agendar seu atendimento!Nosso serviço foi pensado para ser acessível a quem mais precisa você!
         </p>
       </div>
 
