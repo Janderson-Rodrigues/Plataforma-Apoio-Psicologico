@@ -26,22 +26,22 @@ const body = () => {
 
     <section className="mt-16 flex flex-col lg:flex-row items-center lg:items-start gap-8">
  
-      <div className="lg:w-1/2 text-center lg:text-left animate-fade-down animate-once animate-duration-500 animate-delay-200 animate-ease-in animate-normal animate-fill-backwards">
-        <h2 className="text-3xl font-bold animate-fade-down animate-once animate-duration-500 animate-delay-200 animate-ease-in animate-normal animate-fill-backwards">
+      <div className="lg:w-1/2 text-center lg:text-left">
+        <h2 className="text-3xl font-bold ">
           A Plataforma Apoio Psicológico é referência em terapia online
         </h2>
-        <p className="mt-4 text-gray-700 animate-fade-down animate-once animate-duration-500 animate-delay-200 animate-ease-in animate-normal animate-fill-backwards">
+        <p className="mt-4 text-gray-700 ">
           A Plataforma Apoio Psicológico facilita o acesso de pessoas em situação de
           vulnerabilidade socioeconômica a psicólogos treinados que estão prontos
           para cuidar da sua saúde mental.
         </p><br />
-        <p className="mt-4 text-gray-700 animate-fade-down animate-once animate-duration-500 animate-delay-200 animate-ease-in animate-normal animate-fill-backwards">
+        <p className="mt-4 text-gray-700 ">
         Com a  Plataforma Apoio Psicológico, cuidar do seu bem-estar nunca foi tão fácil! Nosso serviço de saúde mental foi construído para ser o mais simples e direto possível.
         </p><br />
-        <h2 className="text-3xl font-bold animate-fade-down animate-once animate-duration-500 animate-delay-200 animate-ease-in animate-normal animate-fill-backwards">
+        <h2 className="text-3xl font-bold ">
           Como funciona a terapia online
         </h2>
-        <p className="mt-4 text-gray-700 animate-fade-down animate-once animate-duration-500 animate-delay-200 animate-ease-in animate-normal animate-fill-backwards">
+        <p className="mt-4 text-gray-700 ">
         A Plataforma Apoio Psicológico oferece um meio simples e direto de contatar psicólogos profissionais, procure um especialista de acordo com área de atuação e entre em contato imediatamente para agendar seu atendimento!Nosso serviço foi pensado para ser acessível a quem mais precisa você!
         </p>
       </div>
