@@ -9,6 +9,7 @@ import MyAppointment from "./pages/MyAppointment"
 import Appointment from "./pages/Appointment"
 import Contato from "./pages/Contato"
 import Navbar from "./componets/Navbar"
+import Footer from "./componets/Footer"
 
 
 
@@ -29,9 +30,8 @@ const App = () => {
         <Route path="/my-appointment" element={<MyAppointment />} />
         <Route path="/appointment:docId" element={<Appointment />} />
         <Route path="/contato" element={<Contato />} />
-
-  
       </Routes>
+      <Footer />
     </div>
   )
 }
