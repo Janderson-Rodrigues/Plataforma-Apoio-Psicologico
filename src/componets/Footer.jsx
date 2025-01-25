@@ -67,6 +67,21 @@ const Footer = () => {
             <li>Código de Ética do Psicólogo</li>
           </ul>
         </div>
+
+        {/* redes sociais */}
+        <div>
+          <div>
+            <img src="" alt="" />
+          </div>
+
+          <div>
+            <img src="" alt="" />
+          </div>
+
+          <div>
+            <img src="" alt="" />
+          </div>
+        </div>
       </div>
     </footer>
   );
