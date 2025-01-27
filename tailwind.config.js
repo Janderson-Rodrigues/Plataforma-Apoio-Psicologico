@@ -11,5 +11,7 @@ export default {
       }
     },
   },
+  // configuração para o modo escuro do site usando tailwind.
+  "darkMode": "class",
   plugins: [require('tailwindcss-animated')],
 }
