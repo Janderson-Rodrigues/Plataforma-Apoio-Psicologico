@@ -48,6 +48,9 @@ const body = () => {
             <p className="mt-4 text-gray-700 " data-aos="fade-down">
             A Plataforma Apoio Psicológico oferece um meio simples e direto de contatar psicólogos profissionais, procure um especialista de acordo com área de atuação e entre em contato imediatamente para agendar seu atendimento!Nosso serviço foi pensado para ser acessível a quem mais precisa você!
             </p>
+            <p className="mt-4 text-gray-700 " data-aos="fade-down">
+            Com a ajuda de plataformas seguras e confiáveis, pacientes podem discutir seus sintomas, receber diagnósticos, iniciar tratamentos e acompanhar a evolução do quadro clínico com a mesma qualidade e segurança de uma consulta presencial.
+            </p>
           </div>
 
 
@@ -56,7 +59,6 @@ const body = () => {
               src={Consulta}alt="Paciente em consulta online" className="max-w-full h-auto rounded-lg shadow-md" data-aos="fade-down"/>
           </div>
         </section>
-
       </div>
     </div>
   )
