@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Perfil from "../images/perfil.png";
-import Psicologo from "../images/psicologo.png";
+
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink to="/contact">
-          <li className="py-1">CONTATO</li>
+          <li className="py-1">CADASTRO</li>
           <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
       </ul>
