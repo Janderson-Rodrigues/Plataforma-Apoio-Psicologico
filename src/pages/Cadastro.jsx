@@ -3,7 +3,9 @@ import React from 'react'
 const Cadastro = () => {
   return (
     <div>
-      <p>Pagina de cadastro</p>
+      <form> Enter your name:
+        <input type="text" value{name}
+      </form>
     </div>
   )
 }
