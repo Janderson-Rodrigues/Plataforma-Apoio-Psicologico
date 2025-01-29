@@ -15,7 +15,9 @@ const App = () => {
   return (
     <div className="mx-4 sm:-[10%]">
       <Navbar />
-      
+      <div class="border-black-500 bg-orange-400 m-0 fixed bottom-48 right-10">
+        Preciso de Ajuda Agora!
+      </div>
 
       <Routes>
         <Route path="/" element={<Home />} />
