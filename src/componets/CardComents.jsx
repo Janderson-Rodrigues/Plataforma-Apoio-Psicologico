@@ -3,7 +3,7 @@ import React from "react";
 const CardComents = () => {
   const testimonials = [
     "As consultas na plataforma que trouxe mais segurança pra minha vida profissional, além de conforto. Com uma equipe que me auxilia sempre que preciso. A melhor plataforma com que trabalhei até agora e não deixo mais eles.",
-    "A PsyMeet realiza um acompanhamento dos profissionais, sempre muito atentos ao feedback sobre a demanda, e abertos em manter alinhado o interesse do profissional, da plataforma e paciente.",
+    "A Plataforma de apoio online realiza um acompanhamento dos profissionais, sempre muito atentos ao feedback sobre a demanda, e abertos em manter alinhado o interesse do profissional, da plataforma e paciente.",
     "Estou adorando usar a plataforma de ajuda psicologica, tenho obtido muito retorno, toda semana tem possíveis novos pacientes entrando em contato. Recomendo bastante.",
     "Minha experiência atendendo com a plataforma está sendo muito satisfatória, a equipe é muito solícita e competente com seus clientes.",
   ];
