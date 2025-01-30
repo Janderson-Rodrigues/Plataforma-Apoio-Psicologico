@@ -57,10 +57,7 @@ const Navbar = () => {
                   Minhas Consultas
                 </p>
 
-                <p
-                  onClick={() => setToken(false)}
-                  className="hover:text-black cursor-pointer"
-                >
+                <p onClick={() => setToken(false)} className="hover:text-black cursor-pointer">
                   Sair
                 </p>
               </div>
