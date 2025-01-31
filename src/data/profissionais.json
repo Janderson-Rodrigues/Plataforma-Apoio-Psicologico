@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nome": "Alvaro Gomes",
+    "especialidade": "Agressividade",
+    "preco": 100,
+    "imagem": "../assets/psicologo4.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Maria Silva",
+    "especialidade": "Ansiedade",
+    "preco": 150,
+    "imagem": "../assets/psicologo2.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "João Santos",
+    "especialidade": "Depressão",
+    "preco": 200,
+    "imagem": "../assets/psicologo3.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Ana Oliveira",
+    "especialidade": "Estresse",
+    "preco": 250,
+    "imagem": "../assets/psicologo1.jpg"
+  }
+]
