@@ -31,8 +31,8 @@ const Navbar = () => {
           <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
 
-        <NavLink to="/contact">
-          <li className="py-1">CADASTRO</li>
+        <NavLink to="/cadastro">
+          <li className="py-1">SOU PROFISSIONAL</li>
           <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden" />
         </NavLink>
       </ul>
