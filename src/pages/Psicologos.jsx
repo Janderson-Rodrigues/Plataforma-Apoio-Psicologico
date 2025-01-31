@@ -5,10 +5,10 @@ import "./styles/psicologos.css";
 function Psicologos() {
   return (
     <>
-      <div>
+      <div className="psicologo-container">
         <ul>
           {ProfissionaisData.map((profissional) => (
-            <li key={profissional.id}>
+            <li key={profissional.id} className="psicologo-card">
               <h2>{profissional.nome}</h2>
               <p>Especialidades:{profissional.especialidade}</p>
               <p>Preço: R${profissional.preco}</p>
