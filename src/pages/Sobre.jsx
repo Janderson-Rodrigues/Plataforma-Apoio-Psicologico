@@ -1,9 +1,12 @@
 import React from 'react';
 import grupo_psicologos from '../images/grupo_psicologos.jpg';
+import Header from '../componets/Header';
+
 
 const About = () => {
   return (
     <div className="px-4 md:px-10 lg:px-20">
+      <Header />
       {/* Título */}
       <h2 className="text-center text-2xl pt-10 text-gray-500" data-aos="fade-down">
         SOBRE <span className="text-gray-700 font-semibold">NÓS</span>
@@ -17,13 +20,17 @@ const About = () => {
           alt="Sobre Prescripto"
           data-aos="fade-down"
         />
-        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-base text-gray-600" data-aos="fade-down">
-          <p>Bem-vindo a <b>Plataforma Online de ajuda psicologica</b>, seu parceiro de confiança na gestão das suas necessidades de saúde de forma conveniente e eficiente. No Prescripto, entendemos os desafios que as pessoas enfrentam ao agendar consultas médicas e gerenciar seus registros de saúde.</p>
-          <p>A consulta psicológica é um processo terapêutico conduzido por um profissional qualificado, que tem como objetivo ajudar indivíduos a compreender e lidar com suas emoções, pensamentos e comportamentos. Através de técnicas e abordagens específicas, o psicólogo auxilia no desenvolvimento de estratégias para enfrentar dificuldades, superar traumas, melhorar relacionamentos e promover o autoconhecimento.</p>
-          <p>A Plataforma está comprometida com a excelência em tecnologia para saúde. Buscamos continuamente aprimorar nossa plataforma, integrando os mais recentes avanços para melhorar a experiência do usuário e oferecer um serviço superior.</p>
-          <h3 className="text-lg font-semibold text-gray-800">Nossa Visão</h3>
-          <p>Nossa visão é criar uma experiência de saúde contínua para cada usuário. Nosso objetivo é conectar pacientes e profissionais de saúde, tornando mais fácil o acesso ao cuidado de que você precisa, quando precisa.</p>
-          <p></p>
+        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-base text-gray-600">
+          <p data-aos="fade-down">Bem-vindo a <b>Plataforma Online de ajuda psicologica</b>, seu parceiro de confiança na gestão das suas necessidades de saúde de forma conveniente e eficiente. No Prescripto, entendemos os desafios que as pessoas enfrentam ao agendar consultas médicas e gerenciar seus registros de saúde.</p>
+          <p data-aos="fade-down">A consulta psicológica é um processo terapêutico conduzido por um profissional qualificado, que tem como objetivo ajudar indivíduos a compreender e lidar com suas emoções, pensamentos e comportamentos. Através de técnicas e abordagens específicas, o psicólogo auxilia no desenvolvimento de estratégias para enfrentar dificuldades, superar traumas, melhorar relacionamentos e promover o autoconhecimento.</p>
+          <p data-aos="fade-down">A Plataforma está comprometida com a excelência em tecnologia para saúde. Buscamos continuamente aprimorar nossa plataforma, integrando os mais recentes avanços para melhorar a experiência do usuário e oferecer um serviço superior.</p>
+          <h3 className="text-lg font-semibold text-gray-800" data-aos="fade-down">Benefícios da Consulta Psicológica</h3>
+          <p data-aos="fade-down">Autoconhecimento: A terapia proporciona uma jornada de descoberta pessoal, ajudando você a entender melhor suas emoções, motivações e padrões de comportamento.</p>
+          <p data-aos="fade-down">Saúde Mental: Cuidar da sua saúde mental é tão importante quanto cuidar da saúde física. A terapia pode ajudar a reduzir sintomas de ansiedade, depressão, estresse e outros transtornos emocionais.</p>
+          <p data-aos="fade-down">Melhoria nos Relacionamentos: Através da terapia, é possível desenvolver habilidades de comunicação e empatia, fortalecendo os vínculos afetivos e melhorando a qualidade dos relacionamentos.</p>
+          <p data-aos="fade-down">Resiliência e Coping: Aprender a lidar com adversidades e desenvolver resiliência são aspectos fundamentais trabalhados durante as sessões terapêuticas.</p>
+          <h3 className="text-lg font-semibold text-gray-800" data-aos="fade-down">Nossa Visão</h3>
+          <p data-aos="fade-down">Nossa visão é criar uma experiência de saúde contínua para cada usuário. Nosso objetivo é conectar pacientes e profissionais de saúde, tornando mais fácil o acesso ao cuidado de que você precisa, quando precisa.</p>
         </div>
       </div>
 
