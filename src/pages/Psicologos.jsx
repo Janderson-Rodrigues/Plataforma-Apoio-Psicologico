@@ -6,20 +6,20 @@ function Psicologos() {
   return (
     <>
       <div className="psicologo-container">
-        <ul>
+        <div>
           {ProfissionaisData.map((profissional) => (
-            <li key={profissional.id} className="psicologo-card">
-              <h2>{profissional.nome}</h2>
-              <p>Especialidades:{profissional.especialidade}</p>
-              <p>Preço: R${profissional.preco}</p>
+            <div key={profissional.id} className="psicologo-card">
               <img
                 src={profissional.imagem}
                 alt={profissional.nome}
                 className="psicologo-image"
               />
-            </li>
+              <h2 className="psicologo-name">{profissional.nome}</h2>
+              <p>Especialidades:{profissional.especialidade}</p>
+              <p className="psicologo-price">Preço: R${profissional.preco}</p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </>
   );
