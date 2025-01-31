@@ -26,5 +26,61 @@
     "especialidade": "Estresse",
     "preco": 250,
     "imagem": "../assets/psicologo1.jpg"
+  },
+  {
+    "id": 5,
+    "nome": "Fernanda Alves",
+    "especialidade": "Fobias",
+    "preco": 300,
+    "imagem": "../assets/psicologo5.jpg"
+  },
+  {
+    "id": 6,
+    "nome": "Marta Costa",
+    "especialidade": "Luto",
+    "preco": 350,
+    "imagem": "../assets/psicologo6.jpg"
+  },
+  {
+    "id": 7,
+    "nome": "Sofia Rodrigues",
+    "especialidade": "Orientação Vocacional",
+    "preco": 400,
+    "imagem": "../assets/psicologo7.jpg"
+  },
+  {
+    "id": 8,
+    "nome": "Ricardo Pereira",
+    "especialidade": "Relacionamentos",
+    "preco": 450,
+    "imagem": "../assets/psicologo8.jpg"
+  },
+  {
+    "id": 9,
+    "nome": "Rute Lopes",
+    "especialidade": "Sexualidade",
+    "preco": 500,
+    "imagem": "../assets/psicologo9.jpg"
+  },
+  {
+    "id": 10,
+    "nome": "Tatiane Pinheiro",
+    "especialidade": "Stress Pós-Traumático",
+    "preco": 550,
+    "imagem": "../assets/psicologo10.png"
+  },
+  {
+    "id": 11,
+    "nome": "Vera Fernandes",
+    "especialidade": "Terapia de Casal",
+    "preco": 600,
+    "imagem": "../assets/psicologo11.jpg"
+  },
+  {
+    "id": 12,
+    "nome": "Hugo Freire",
+    "especialidade": "Transtorno Obsessivo-Compulsivo",
+    "preco": 650,
+    "imagem": "../assets/psicologo12.jpg"
   }
 ]
