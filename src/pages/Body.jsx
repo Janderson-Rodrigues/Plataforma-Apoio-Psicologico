@@ -2,6 +2,7 @@ import React from 'react';
 import Consulta from '../images/Consulta_online.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import BotaoLogin from '../componets/BotaoLogin';
 // ..
 Aos.init();
 
@@ -50,7 +51,8 @@ const body = () => {
             </p>
             <p className="mt-4 text-gray-700 " data-aos="fade-down">
             Com a ajuda de plataformas seguras e confiáveis, pacientes podem discutir seus sintomas, receber diagnósticos, iniciar tratamentos e acompanhar a evolução do quadro clínico com a mesma qualidade e segurança de uma consulta presencial.
-            </p>
+            </p><br />
+            <BotaoLogin />
           </div>
 
 
