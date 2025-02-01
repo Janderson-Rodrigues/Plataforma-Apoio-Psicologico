@@ -69,11 +69,13 @@ export default function CadastroForm() {
             </div>
 
             <div data-aos="fade-down">
-              <label htmlFor="abordagem" className="block text-sm font-medium">Abordagem</label>
+              <label htmlFor="Faixa etaria" className="block text-sm font-medium">Faixa Etaria</label>
               <select id="abordagem" {...register("abordagem")} className="w-full p-2 border rounded-md">
                 <option value="">Selecione...</option>
-                <option value="psicanalise">Psicanálise</option>
-                <option value="humanista">Humanista</option>
+                <option value="Idade">10 a 15 anos</option>
+                <option value="Idade">16 a 20 anos</option>
+                <option value="Idade">21 a 30 anos</option>
+                <option value="Idade"> 31 a 40 anos</option>
               </select>
             </div>
 
