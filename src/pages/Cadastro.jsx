@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 
+
 export default function CadastroForm() {
   const {
     register,
@@ -12,6 +13,7 @@ export default function CadastroForm() {
   };
 
   return (
+    <>
     <div className="max-w-2xl mx-auto p-6 border rounded-lg shadow-md">
       <h2 className="text-xl font-semibold mb-4">Preencha seus dados e junte-se a nós!</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2 gap-4">
@@ -59,5 +61,6 @@ export default function CadastroForm() {
         <button type="submit" className="col-span-2 bg-gray-600 text-white p-2 rounded-md hover:bg-primary transition">Enviar informações</button>
       </form>
     </div>
+    </>
   );
 }

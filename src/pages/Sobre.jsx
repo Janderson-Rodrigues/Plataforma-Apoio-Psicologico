@@ -1,6 +1,7 @@
 import React from 'react';
 import grupo_psicologos from '../images/grupo_psicologos.jpg';
 import Header from '../componets/Header';
+import BotaoLogin from '../componets/BotaoLogin';
 
 
 const About = () => {
@@ -33,12 +34,11 @@ const About = () => {
           <p data-aos="fade-down">Nossa visão é criar uma experiência de saúde contínua para cada usuário. Nosso objetivo é conectar pacientes e profissionais de saúde, tornando mais fácil o acesso ao cuidado de que você precisa, quando precisa.</p>
         </div>
       </div>
-
       {/* Seção: Por que escolher nós? */}
       <h2 className="text-xl my-6 text-center" data-aos="fade-down">
         POR QUE <span className="text-gray-700 font-semibold">ESCOLHER NÓS</span>
       </h2>
-
+      < BotaoLogin /> <br />
       <div className="flex flex-col md:flex-row gap-6 mb-20" data-aos="fade-down">
         {[
           { title: "EFICIÊNCIA:", text: "Agendamento de consultas simplificado que se adapta ao seu estilo de vida agitado." },

@@ -10,6 +10,7 @@ import Footer from "./componets/Footer";
 import Psicologos from "./pages/Psicologos";
 import Cadastro from "./pages/Cadastro";
 import Sobre from "./pages/Sobre";
+import { Sidebar } from "lucide-react";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/my-appointment" element={<MyAppointment />} />
         <Route path="/appointment:docId" element={<Appointment />} />
         <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/administrador" element={<Sidebar />} />
       </Routes>
       <Footer />
     </div>
