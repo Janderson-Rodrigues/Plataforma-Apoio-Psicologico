@@ -1,86 +1,100 @@
 [
   {
     "id": 1,
-    "nome": "Alvaro Gomes",
+    "nome": "Fernanda Nascimento",
     "especialidade": "Agressividade",
-    "preco": 100,
-    "imagem": "../assets/psicologo4.jpg"
+    "preco": 200,
+    "imagem": "../assets/psicologo1.png"
   },
   {
     "id": 2,
     "nome": "Maria Silva",
     "especialidade": "Ansiedade",
     "preco": 150,
-    "imagem": "../assets/psicologo2.jpg"
+    "imagem": "../assets/psicologo2.png"
   },
   {
     "id": 3,
     "nome": "João Santos",
     "especialidade": "Depressão",
     "preco": 200,
-    "imagem": "../assets/psicologo3.jpg"
+    "imagem": "../assets/psicologo3.png"
   },
   {
     "id": 4,
-    "nome": "Ana Oliveira",
+    "nome": "Janderson Oliveira",
     "especialidade": "Estresse",
-    "preco": 250,
-    "imagem": "../assets/psicologo1.jpg"
+    "preco": 200,
+    "imagem": "../assets/psicologo4.png"
   },
   {
     "id": 5,
-    "nome": "Fernanda Alves",
+    "nome": "Tatiane Alves",
     "especialidade": "Fobias",
-    "preco": 300,
-    "imagem": "../assets/psicologo5.jpg"
+    "preco": 150,
+    "imagem": "../assets/psicologo5.png"
   },
   {
     "id": 6,
-    "nome": "Marta Costa",
+    "nome": "Leandro Costa",
     "especialidade": "Luto",
-    "preco": 350,
-    "imagem": "../assets/psicologo6.jpg"
+    "preco": 150,
+    "imagem": "../assets/psicologo6.png"
   },
   {
     "id": 7,
     "nome": "Sofia Rodrigues",
     "especialidade": "Orientação Vocacional",
-    "preco": 400,
-    "imagem": "../assets/psicologo7.jpg"
+    "preco": 100,
+    "imagem": "../assets/psicologo7.png"
   },
   {
     "id": 8,
     "nome": "Ricardo Pereira",
     "especialidade": "Relacionamentos",
-    "preco": 450,
-    "imagem": "../assets/psicologo8.jpg"
+    "preco": 200,
+    "imagem": "../assets/psicologo8.png"
   },
   {
     "id": 9,
     "nome": "Rute Lopes",
     "especialidade": "Sexualidade",
-    "preco": 500,
-    "imagem": "../assets/psicologo9.jpg"
+    "preco": 150,
+    "imagem": "../assets/psicologo9.png"
   },
   {
     "id": 10,
     "nome": "Tatiane Pinheiro",
     "especialidade": "Stress Pós-Traumático",
-    "preco": 550,
+    "preco": 100,
     "imagem": "../assets/psicologo10.png"
   },
   {
     "id": 11,
-    "nome": "Vera Fernandes",
+    "nome": "Otto Fernandes",
     "especialidade": "Terapia de Casal",
-    "preco": 600,
-    "imagem": "../assets/psicologo11.jpg"
+    "preco": 300,
+    "imagem": "../assets/psicologo11.png"
   },
   {
     "id": 12,
     "nome": "Hugo Freire",
     "especialidade": "Transtorno Obsessivo-Compulsivo",
-    "preco": 650,
-    "imagem": "../assets/psicologo12.jpg"
+    "preco": 100,
+    "imagem": "../assets/psicologo12.png"
+  },
+  {
+    "id": 13,
+    "nome": "Miguel Santos",
+    "especialidade": "Transtorno de Personalidade",
+    "preco": 200,
+    "imagem": "../assets/psicologo13.png"
+  },
+  {
+    "id": 14,
+    "nome": "João Almeida",
+    "especialidade": "Transtorno de Ansiedade Generalizada",
+    "preco": 150,
+    "imagem": "../assets/psicologo14.png"
   }
 ]
