@@ -8,7 +8,6 @@ import Appointment from "./pages/Appointment";
 import Navbar from "./componets/Navbar";
 import Footer from "./componets/Footer";
 import Psicologos from "./pages/Psicologos";
-import Cadastro from "./pages/Cadastro";
 import Sobre from "./pages/Sobre";
 import { Sidebar } from "lucide-react";
 
@@ -28,7 +27,6 @@ const App = () => {
         <Route path="/my-profile" element={<Myprofile />} />
         <Route path="/my-appointment" element={<MyAppointment />} />
         <Route path="/appointment:docId" element={<Appointment />} />
-        <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/administrador" element={<Sidebar />} />
       </Routes>
       <Footer />
