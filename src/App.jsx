@@ -9,7 +9,6 @@ import Navbar from "./componets/Navbar";
 import Footer from "./componets/Footer";
 import Psicologos from "./pages/Psicologos";
 import Sobre from "./pages/Sobre";
-import { Sidebar } from "lucide-react";
 import EntreEmContato from "./componets/EntreEmContato";
 
 const App = () => {
@@ -22,10 +21,9 @@ const App = () => {
         <Route path="/psicologos" element={<Psicologos />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sobre" element={<Sobre />} />
-        <Route path="/my-profile" element={<Myprofile />} />
+        <Route path="/meu-perfil" element={<Myprofile />} />
         <Route path="/my-appointment" element={<MyAppointment />} />
         <Route path="/appointment:docId" element={<Appointment />} />
-        <Route path="/administrador" element={<Sidebar />} />
       </Routes>
       <Footer />
     </div>

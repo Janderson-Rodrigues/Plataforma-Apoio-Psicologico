@@ -1,5 +1,6 @@
 import React from "react";
 import ProfissionaisData from "../data/profissionais.json";
+import Avaliacao from "../componets/Avaliacao" ; // Importa o componente de avaliação
 
 function Psicologos() {
   return (
@@ -21,6 +22,11 @@ function Psicologos() {
             <h2 className="text-lg font-semibold mt-2">{profissional.nome}</h2>
             <p className="text-gray-600">Especialidades: {profissional.especialidade}</p>
             <p className="text-primary font-bold">Preço: R${profissional.preco}</p>
+
+            {/* Componente de avaliação abaixo do psicólogo */}
+            <div className="mt-4">
+              <Avaliacao totalStars={5} onRating={(value) => console.log(`${profissional.nome} recebeu nota: ${value}`)} />
+            </div>
           </div>
         ))}
       </div>
@@ -29,4 +35,5 @@ function Psicologos() {
 }
 
 export default Psicologos;
+
 
