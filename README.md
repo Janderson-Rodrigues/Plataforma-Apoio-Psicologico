@@ -22,8 +22,8 @@ Gabriel Bezerra
 - [@anildogomes](https://github.com/anildogomes)
 
 ## Atribuições:
-- Anildo: Página dos profissionais e responsável técnico sobre ideias de implementação da plataforma.
-- Janderson Carneiro Rodrigues: Página inicial, componente de cadastro, pagina nomeada sobre a plataforma, footer.
+- Anildo: Página dos profissionais e responsável técnico sobre ideias de implementação da plataforma, sistema de avaliação.
+- Janderson Carneiro Rodrigues: Página inicial, componente de cadastro, pagina nomeada sobre a plataforma, footer, sistema de avaliação.
 - Luiz Felipe Martins de Araujo: Criação do botão entre em contato, e criação do README.
 
 
