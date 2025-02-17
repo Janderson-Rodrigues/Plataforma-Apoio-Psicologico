@@ -41,7 +41,7 @@ function StarRating({ productId }) {
   return (
     <div className="flex flex-col items-center p-4 bg-white shadow-lg rounded-lg max-w-xs mx-auto">
       <h3 className="text-lg font-semibold text-gray-700 mb-2">
-        Avaliação do Produto
+        Avaliação 
       </h3>
       <div className="flex gap-1">
         {[1, 2, 3, 4, 5].map((star) => (
