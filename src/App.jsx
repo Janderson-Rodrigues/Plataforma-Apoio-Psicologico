@@ -12,7 +12,7 @@ import Sobre from "./pages/Sobre";
 import EntreEmContato from "./componets/EntreEmContato";
 
 const App = () => {
-  return (
+  return ( 
     <div className="mx-4 sm:-[10%]">
       <Navbar />
       <EntreEmContato />

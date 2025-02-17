@@ -35,7 +35,7 @@ export default function UserDashboard() {
         {/* Header */}
         <header className="flex justify-between items-center mb-6">
           <div>
-            <h1 className="text-2xl font-semibold">Olá, Janderson</h1>
+            <h1 className="text-2xl font-semibold">Olá, Paciente</h1>
             <p className="text-gray-600">
               Que bom te ver por aqui! Configure seu perfil para começar.
             </p>
@@ -63,7 +63,6 @@ export default function UserDashboard() {
             <h2 className="font-semibold">
               Como as redes sociais podem aumentar a ansiedade?
             </h2>
-            <p>Acesse o blog da Psicologia Viva e leia esse conteúdo.</p>
           </div>
         </section>
 
