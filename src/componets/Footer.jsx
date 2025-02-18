@@ -6,10 +6,10 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 px-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 mb-4">
-            <div className="bg-yellow-500 rounded-full w-12 h-12 flex items-center justify-center">
+            <div className="bg-primary rounded-full w-12 h-12 flex items-center justify-center">
               <span className="text-white font-bold text-2xl"></span>
             </div>
-            <span className="text-yellow-600 font-bold text-xl">
+            <span className="text-primary font-bold text-xl">
               Psicologia Online, terapia para todos!
             </span>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
             </li>
             
             <li className="col-span-2">
-              <a href="#" className="text-yellow-600 flex items-center">
+              <a href="#" className="text-primary flex items-center">
                 Ver mais →
               </a>
             </li>
