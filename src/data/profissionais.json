@@ -3,13 +3,18 @@
     "id": 1,
     "nome": "Fernanda Nascimento",
     "especialidade": "Agressividade",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 200,
     "imagem": "../assets/psicologo1.png"
+  
   },
   {
     "id": 2,
     "nome": "Maria Silva",
     "especialidade": "Ansiedade",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 150,
     "imagem": "../assets/psicologo2.png"
   },
@@ -17,6 +22,8 @@
     "id": 3,
     "nome": "João Santos",
     "especialidade": "Depressão",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 200,
     "imagem": "../assets/psicologo3.png"
   },
@@ -24,6 +31,8 @@
     "id": 4,
     "nome": "Janderson Oliveira",
     "especialidade": "Estresse",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 200,
     "imagem": "../assets/psicologo4.png"
   },
@@ -31,6 +40,8 @@
     "id": 5,
     "nome": "Tatiane Alves",
     "especialidade": "Fobias",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 150,
     "imagem": "../assets/psicologo5.png"
   },
@@ -38,6 +49,8 @@
     "id": 6,
     "nome": "Leandro Costa",
     "especialidade": "Luto",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 150,
     "imagem": "../assets/psicologo6.png"
   },
@@ -45,6 +58,8 @@
     "id": 7,
     "nome": "Sofia Rodrigues",
     "especialidade": "Orientação Vocacional",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 100,
     "imagem": "../assets/psicologo7.png"
   },
@@ -52,6 +67,8 @@
     "id": 8,
     "nome": "Ricardo Pereira",
     "especialidade": "Relacionamentos",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 200,
     "imagem": "../assets/psicologo8.png"
   },
@@ -59,6 +76,8 @@
     "id": 9,
     "nome": "Rute Lopes",
     "especialidade": "Sexualidade",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 150,
     "imagem": "../assets/psicologo9.png"
   },
@@ -66,6 +85,8 @@
     "id": 10,
     "nome": "Tatiane Pinheiro",
     "especialidade": "Stress Pós-Traumático",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 100,
     "imagem": "../assets/psicologo10.png"
   },
@@ -73,6 +94,8 @@
     "id": 11,
     "nome": "Otto Fernandes",
     "especialidade": "Terapia de Casal",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 300,
     "imagem": "../assets/psicologo11.png"
   },
@@ -80,6 +103,8 @@
     "id": 12,
     "nome": "Hugo Freire",
     "especialidade": "Transtorno Obsessivo-Compulsivo",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 100,
     "imagem": "../assets/psicologo12.png"
   },
@@ -87,6 +112,8 @@
     "id": 13,
     "nome": "Miguel Santos",
     "especialidade": "Transtorno de Personalidade",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 200,
     "imagem": "../assets/psicologo13.png"
   },
@@ -94,6 +121,8 @@
     "id": 14,
     "nome": "João Almeida",
     "especialidade": "Transtorno de Ansiedade Generalizada",
+    "Faixa Etária": "Adultos",
+    "Localização": "Cedro-CE",
     "preco": 150,
     "imagem": "../assets/psicologo14.png"
   }
