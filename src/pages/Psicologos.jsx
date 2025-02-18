@@ -48,7 +48,7 @@ function Psicologos() {
         {psicologosFiltrados.map((profissional) => (
           <div
             key={profissional.id}
-            className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col"
+            className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex flex-col"
           >
             {/* Imagem do Psicólogo */}
             <div className="relative overflow-hidden rounded-lg flex-shrink-0">

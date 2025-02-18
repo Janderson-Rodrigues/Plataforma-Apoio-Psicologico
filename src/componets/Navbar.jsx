@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import { NavLink, useNavigate } from "react-router-dom";
 import Perfil from "../images/perfil.png";
-
+import Logo from "../images/Logopsico.png";
+import Logos from "../images/logopsi.avif";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Navbar = () => {
       {/* Logo */}
       <img
         className="w-44 cursor-pointer"
-        src='' // Substitua pelo caminho do seu logo
+        src={Logos} // Substitua pelo caminho do seu logo
         alt="Logo"
         onClick={() => navigate("/")}
       />
