@@ -55,6 +55,9 @@ const Footer = () => {
             <li>
               Rua Xxxx Xxxxxxxx, 0000, Yx Yxxx Yxxxx, Yxxxxxxxxx, Yxxxxxxx-ZZ
             </li>
+            <li>
+              <a href="#"> Administrador</a>
+            </li>
           </ul>
         </div>
 
@@ -66,21 +69,6 @@ const Footer = () => {
             <li>Resolução CFP 011/2018</li>
             <li>Código de Ética do Psicólogo</li>
           </ul>
-        </div>
-
-        {/* redes sociais */}
-        <div>
-          <div>
-            <img src="" alt="" />
-          </div>
-
-          <div>
-            <img src="" alt="" />
-          </div>
-
-          <div>
-            <img src="" alt="" />
-          </div>
         </div>
       </div>
     </footer>
