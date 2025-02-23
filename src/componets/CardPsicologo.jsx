@@ -45,9 +45,6 @@ const CardPsicologos = ({ psicologosFiltrados, onFiltroChange }) => {
                     console.log(`${profissional.nome} recebeu nota: ${value}`)
                   }
                 />
-                <p className="text-xs text-gray-500 mt-1">
-                  {profissional.avaliacoes} avaliações
-                </p>
               </div>
 
               {/* Botão para Agendar Consulta */}
