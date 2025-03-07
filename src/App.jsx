@@ -9,11 +9,10 @@ import Navbar from "./componets/Navbar";
 import Footer from "./componets/Footer";
 import Psicologos from "./pages/Psicologos";
 import Sobre from "./pages/Sobre";
-import EntreEmContato from "./componets/EntreEmContato";
 
 const App = () => {
   return ( 
-    <div className="mx-4 sm:-[10%]">
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
