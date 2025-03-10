@@ -11,7 +11,7 @@ const Navbar = () => {
   const [token, setToken] = useState(true); // Simulação de autenticação
 
   return (
-    <div className="flex items-center justify-between text-sm py-6 px-6 md:px-12 bg-white shadow-md">
+    <div className="flex items-center justify-between text-sm py-6 px-6 md:px-12 h-[10vh] bg-white shadow-md">
       {/* Logo */}
       <img
         className="w-44 cursor-pointer"
