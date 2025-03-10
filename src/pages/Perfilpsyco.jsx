@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Para redirecionar
 import PsicologoPerfil from '../images/psicologo-perfil.png'; // Imagem de perfil do psicólogo
+import MenuHorizontal from "../componets/Config_Psicologo"; // Importe o componente MenuHorizontal
 
 const PsicologoPerfilPage = () => {
   const navigate = useNavigate(); // Hook para redirecionamento
@@ -95,6 +96,11 @@ const PsicologoPerfilPage = () => {
             Ver Agenda
           </button>
         </div>
+      </div>
+
+      {/* Componente MenuHorizontal */}
+      <div className="w-full max-w-4xl">
+        <MenuHorizontal />
       </div>
 
       {/* Modal de Edição de Perfil */}
