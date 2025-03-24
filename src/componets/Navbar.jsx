@@ -54,7 +54,8 @@ const Navbar = () => {
         >
           <li>SOBRE</li>
         </NavLink>
-
+       
+        { /*  Inves de por uma li para a página de administrador, crie um usuário
         <NavLink
           to="/administrador"
           className={({ isActive }) =>
@@ -65,6 +66,7 @@ const Navbar = () => {
         >
           <li>ADMINISTRADOR</li>
         </NavLink>
+        */}
       </ul>
 
       {/* Menu de Perfil ou Botão de Login */}
