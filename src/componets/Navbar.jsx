@@ -30,7 +30,7 @@ const Navbar = () => {
             }`
           }
         >
-          <li>HOME</li>
+          <li>INICIO</li>
         </NavLink>
 
         <NavLink
