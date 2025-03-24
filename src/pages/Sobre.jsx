@@ -7,20 +7,20 @@ import BotaoLogin from '../componets/BotaoLogin';
 const About = () => {
   return (
     <div className="px-4 md:px-10 lg:px-20">
-      <Header />
       {/* Título */}
       <h2 className="text-center text-2xl pt-10 text-gray-500" data-aos="fade-down">
         SOBRE <span className="text-gray-700 font-semibold">NÓS</span>
       </h2>
 
       {/* Seção principal */}
-      <div className="my-10 flex flex-col md:flex-row gap-12 items-center">
+      <div className="my-10 flex flex-col gap-[30px] items-center">
         <img 
           className="w-full md:max-w-[360px] rounded-lg shadow-md" 
           src={grupo_psicologos}
           alt="Sobre Prescripto"
           data-aos="fade-down"
         />
+
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-base text-gray-600">
           <p data-aos="fade-down">Bem-vindo a <b>Plataforma Online de ajuda psicologica</b>, seu parceiro de confiança na gestão das suas necessidades de saúde de forma conveniente e eficiente. No Prescripto, entendemos os desafios que as pessoas enfrentam ao agendar consultas médicas e gerenciar seus registros de saúde.</p>
           <p data-aos="fade-down">A consulta psicológica é um processo terapêutico conduzido por um profissional qualificado, que tem como objetivo ajudar indivíduos a compreender e lidar com suas emoções, pensamentos e comportamentos. Através de técnicas e abordagens específicas, o psicólogo auxilia no desenvolvimento de estratégias para enfrentar dificuldades, superar traumas, melhorar relacionamentos e promover o autoconhecimento.</p>
@@ -38,7 +38,6 @@ const About = () => {
       <h2 className="text-xl my-6 text-center" data-aos="fade-down">
         POR QUE <span className="text-gray-700 font-semibold">ESCOLHER NÓS</span>
       </h2>
-      < BotaoLogin /> <br />
       <div className="flex flex-col md:flex-row gap-6 mb-20" data-aos="fade-down">
         {[
           { title: "EFICIÊNCIA:", text: "Agendamento de consultas simplificado que se adapta ao seu estilo de vida agitado." },
@@ -53,8 +52,8 @@ const About = () => {
             <p>{item.text}</p>
           </div>
         ))}
-      </div>
-    </div>
+      </div> 
+   </div>
   );
 };
 
