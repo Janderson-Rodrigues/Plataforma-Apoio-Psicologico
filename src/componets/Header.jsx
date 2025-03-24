@@ -11,7 +11,7 @@ const Header = () => {
         </p>
         <div className='flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light'>
             <img className='w-28' src={assets.group_profiles} alt="" />
-            <p>A Plataforma de Apoio Psicológico Comunitário é uma solução inovadora que conecta profissionais de psicologia a pacientes que buscam suporte emocional, oferecendo atendimentos gratuitos ou a preços acessíveis. Por meio de um ambiente digital amigável.</p>
+            <p className='text-[18px]'>A Plataforma de Apoio Psicológico Comunitário é uma solução inovadora que conecta profissionais de psicologia a pacientes que buscam suporte emocional, oferecendo atendimentos gratuitos ou a preços acessíveis. Por meio de um ambiente digital amigável.</p>
         </div>
         {/* Botao marcar consulta */}
         <a href="#especialistas" className='flex items-center gap-2 bg-white px-8  py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-125 transition-all duration-200'>
