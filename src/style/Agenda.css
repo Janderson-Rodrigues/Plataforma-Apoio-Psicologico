@@ -1,0 +1,71 @@
+/* Fundo do calendário */
+.react-calendar {
+    background: #1e293b; /* Azul escuro */
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  /* Células dos dias */
+  .react-calendar__tile {
+    font-size: 1rem;
+    color: #e5e7eb;
+    border-radius: 50%;
+    transition: background 0.2s, transform 0.2s;
+  }
+  
+  /* Dias de domingo em vermelho */
+  .react-calendar__month-view__days__day--weekend {
+    color: #dc2626 !important; /* Vermelho */
+  }
+  
+  /* Dia selecionado */
+  .react-calendar__tile--active {
+    background: #2563eb !important; /* Azul mais escuro */
+    color: white !important;
+    font-weight: bold;
+  }
+  
+  /* Hover nos dias */
+  .react-calendar__tile:hover {
+    background: #6366f1;
+    color: white;
+    border-radius: 50%;
+    transform: scale(1.1);
+  }
+  
+  /* Header do calendário */
+  .react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Botões de navegação (Próximo/Anterior) */
+  .react-calendar__navigation button {
+    background: #374151; /* Cinza escuro */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .react-calendar__navigation button:enabled:hover {
+    background: #2563eb; /* Azul */
+  }
+  
+  /* Ocultar bordas do botão de navegação */
+  .react-calendar__navigation button:disabled {
+    background: transparent;
+    color: gray;
+    opacity: 0.5;
+  }
+  
+  /* Remover bordas padrão ao redor do calendário */
+  .react-calendar__tile:focus {
+    outline: none;
+  }
+  
