@@ -23,7 +23,7 @@ const Login = () => {
               <label className="font-semibold text-[16px]">Senha:</label>
               <input className="w-full h-[35px] border-[3px] border-[#000000] rounded-[10px]" type="password" />
             </div>
-            <button className="bg-[#5F6FFF] text-[#FFFFFF] py-2 rounded-[10px] font-bold text-[16px] w-[424px] h-[35px] mb-[27px]">Vamos lá!</button>
+            <button className="bg-[#5F6FFF] text-[#FFFFFF] py-2 rounded-[10px] font-bold text-[16px] w-[424px] h-[35px] mb-[27px] hover:bg-[#625fff] duration-300">Vamos lá!</button>
           </form>
           <div className="flex items-center justify-center w-full max-w-sm mb-[27px]">
             <hr className="flex-grow border-gray-300" />
@@ -34,9 +34,9 @@ const Login = () => {
             <button className="border p-2 rounded flex items-center">Sign in with Google</button>
             <button className="border p-2 rounded flex items-center">Sign in with Apple</button>
           </div>
-          <p className="mt-4 text-gray-600">
-            Já é cadastrado? <a href="#" className="text-blue-600">Entre aqui</a>
-          </p>
+            <p className="mt-4 text-gray-600">
+              Já é cadastrado? <a href="#" className="text-blue-600">Entre aqui</a>
+            </p>
         </div>
       </div>
       
@@ -44,8 +44,8 @@ const Login = () => {
       <div className="w-1/2 flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: `url(${FormaOrganica})` }}>
         <h2 className="text-[45px] text-[#33196F] font-semibold mb-[25%]">Entrar como..</h2>
         <div className="flex gap-[30px]">
-          <button className="pt-[9px] pb-[9px] pl-[35px] pr-[35px] border-[3px] border-[#33196F] rounded-[10px] text-[#FFFFFF] text-[32px] font-medium hover:scale-105 duration-300">Profissional</button>
-          <button className="pt-[9px] pb-[9px] pl-[35px] pr-[35px] border-[3px] border-[#33196F] rounded-[10px] text-[#FFFFFF] text-[32px] font-medium hover:scale-105 duration-300">Paciente</button>
+          <button className="pt-[9px] pb-[9px] pl-[35px] pr-[35px] border-[3px] border-[#33196F] rounded-[10px] text-[#FFFFFF] text-[32px] font-medium hover:scale-110 duration-300">Profissional</button>
+          <button className="pt-[9px] pb-[9px] pl-[35px] pr-[35px] border-[3px] border-[#33196F] rounded-[10px] text-[#FFFFFF] text-[32px] font-medium hover:scale-110 duration-300">Paciente</button>
         </div>
       </div>
     </div>
