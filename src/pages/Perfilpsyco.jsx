@@ -99,55 +99,66 @@ const PsicologoPerfilPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 p-8">
-      <div className="bg-white p-10 rounded-2xl shadow-xl w-full max-w-4xl mb-10 border border-gray-100">
-        <h2 className="text-4xl font-bold mb-8 text-gray-800">Meu Perfil</h2>
-        <div className="flex items-center mb-8">
-          <div className="relative">
-            <img
-              src={perfil.foto}
-              alt="Foto de perfil"
-              className="w-32 h-32 rounded-full mr-6 border-4 border-blue-100"
-            />
-            <label
-              htmlFor="fotoPerfil"
-              className="absolute bottom-0 right-0 bg-blue-500 text-white p-2 rounded-full cursor-pointer hover:bg-blue-600"
-            >
-              ✏️
-              <input
-                type="file"
-                id="fotoPerfil"
-                accept="image/*"
-                onChange={handleFotoChange}
-                className="hidden"
+    <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-blue-50 to-purple-50 p-8">
+      {/* Container flexível para alinhar perfil e agenda lado a lado */}
+      <div className="flex w-full max-w-6xl gap-10">
+        {/* Perfil (Esquerda) */}
+        <div className="bg-white p-10 rounded-2xl shadow-xl w-1/2 border border-gray-100">
+          <h2 className="text-4xl font-bold mb-8 text-gray-800">Meu Perfil</h2>
+          <div className="flex items-center mb-8">
+            <div className="relative">
+              <img
+                src={perfil.foto}
+                alt="Foto de perfil"
+                className="w-32 h-32 rounded-full mr-6 border-4 border-blue-100"
               />
-            </label>
+              <label
+                htmlFor="fotoPerfil"
+                className="absolute bottom-0 right-0 bg-blue-500 text-white p-2 rounded-full cursor-pointer hover:bg-blue-600"
+              >
+                ✏️
+                <input
+                  type="file"
+                  id="fotoPerfil"
+                  accept="image/*"
+                  onChange={handleFotoChange}
+                  className="hidden"
+                />
+              </label>
+            </div>
+            <div>
+              <p className="text-gray-800 font-bold text-2xl">{perfil.nome}</p>
+              <p className="text-gray-600 text-lg">{perfil.especializacao}</p>
+            </div>
           </div>
-          <div>
-            <p className="text-gray-800 font-bold text-2xl">{perfil.nome}</p>
-            <p className="text-gray-600 text-lg">{perfil.especializacao}</p>
+          <p className="text-gray-700 text-lg mb-8">{perfil.descricao}</p>
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">Horários Disponíveis</h3>
+            <ul className="list-disc list-inside text-gray-700">
+              {perfil.horarios.map((horario, index) => (
+                <li key={index} className="text-lg">{horario}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex space-x-6">
+            <button onClick={() => setIsEditing(true)} className="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 text-lg">Editar Perfil</button>
+            <button onClick={() => navigate("/agenda")} className="bg-purple-500 text-white px-8 py-3 rounded-lg hover:bg-purple-600 text-lg">Ver Agenda</button>
           </div>
         </div>
-        <p className="text-gray-700 text-lg mb-8">{perfil.descricao}</p>
-        <div className="mb-8">
-          <h3 className="text-2xl font-bold mb-4 text-gray-800">Horários Disponíveis</h3>
-          <ul className="list-disc list-inside text-gray-700">
-            {perfil.horarios.map((horario, index) => (
-              <li key={index} className="text-lg">{horario}</li>
-            ))}
-          </ul>
+
+        {/* Agenda (Direita) */}
+        <div className="flex flex-col w-1/2 gap-6">
+          <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex-1">
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">Agenda</h3>
+            <Agenda />
+          </div>
+          {/* Ícones abaixo da Agenda */}
+          <div className="bg-white p-4 rounded-2xl shadow-xl border border-gray-100">
+            <MenuHorizontal />
+          </div>
         </div>
-        <div className="flex space-x-6">
-          <button onClick={() => setIsEditing(true)} className="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 text-lg">Editar Perfil</button>
-          <button onClick={() => navigate("/agenda")} className="bg-purple-500 text-white px-8 py-3 rounded-lg hover:bg-purple-600 text-lg">Ver Agenda</button>
-        </div>
       </div>
-      <div className="w-full max-w-4xl">
-        <MenuHorizontal />
-      </div>
-      <div className="w-full max-w-4xl mt-10">
-        <Agenda />
-      </div>
+
       {isEditing && <EditarPerfilModal perfil={perfil} handleSave={handleSave} setIsEditing={setIsEditing} />}
     </div>
   );
