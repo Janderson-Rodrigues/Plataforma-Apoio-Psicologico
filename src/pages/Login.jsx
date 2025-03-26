@@ -44,8 +44,8 @@ const Login = () => {
       <div className="w-1/2 flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: `url(${FormaOrganica})` }}>
         <h2 className="text-[45px] text-[#33196F] font-semibold mb-[25%]">Entrar como..</h2>
         <div className="flex gap-[30px]">
-          <button className="pt-[9px] pb-[9px] pl-[35px] pr-[35px] border-[3px] border-[#33196F] rounded-[10px] text-[#FFFFFF] text-[32px] font-medium">Profissional</button>
-          <button className="pt-[9px] pb-[9px] pl-[35px] pr-[35px] border-[3px] border-[#33196F] rounded-[10px] text-[#FFFFFF] text-[32px] font-medium">Paciente</button>
+          <button className="pt-[9px] pb-[9px] pl-[35px] pr-[35px] border-[3px] border-[#33196F] rounded-[10px] text-[#FFFFFF] text-[32px] font-medium hover:scale-105 duration-300">Profissional</button>
+          <button className="pt-[9px] pb-[9px] pl-[35px] pr-[35px] border-[3px] border-[#33196F] rounded-[10px] text-[#FFFFFF] text-[32px] font-medium hover:scale-105 duration-300">Paciente</button>
         </div>
       </div>
     </div>
