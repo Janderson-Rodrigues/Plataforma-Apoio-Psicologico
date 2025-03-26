@@ -12,6 +12,7 @@ import Sobre from "./pages/Sobre";
 import EntreEmContato from "./componets/EntreEmContato";
 import PsicologoPerfilPage from "./pages/Perfilpsyco";
 import ProfissionalInf from './pages/ProfissionaisInf'
+import Anamese from './pages/Anamense'
 
 const App = () => {
   return ( 
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/appointment:docId" element={<Appointment />} />
         <Route path="/Perfil-Psicologo" element={<PsicologoPerfilPage />} />
         <Route path="/CadastroProfissional" element={<ProfissionalInf />} />
+        <Route path="/CadastroPacient" element={<Anamese />} />
       </Routes>
       <Footer />
     </div>
