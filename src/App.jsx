@@ -11,6 +11,7 @@ import Psicologos from "./pages/Psicologos";
 import Sobre from "./pages/Sobre";
 import EntreEmContato from "./componets/EntreEmContato";
 import PsicologoPerfilPage from "./pages/Perfilpsyco";
+import ProfissionalInf from './pages/ProfissionaisInf'
 
 const App = () => {
   return ( 
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/my-appointment" element={<MyAppointment />} />
         <Route path="/appointment:docId" element={<Appointment />} />
         <Route path="/Perfil-Psicologo" element={<PsicologoPerfilPage />} />
+        <Route path="/CadastroProfissional" element={<ProfissionalInf />} />
       </Routes>
       <Footer />
     </div>
