@@ -30,7 +30,7 @@ const App = () => {
         <Route path="/appointment:docId" element={<Appointment />} />
         <Route path="/Perfil-Psicologo" element={<PsicologoPerfilPage />} />
         <Route path="/CadastroProfissional" element={<ProfissionalInf />} />
-        <Route path="/CadastroPacient" element={<Anamese />} />
+        <Route path="/CadastroPaciente" element={<Anamese />} />
         <Route path="/Login" element={<Login/>} />
       </Routes>
       <Footer />
