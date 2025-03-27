@@ -98,7 +98,7 @@ const Navbar = () => {
           </div>
         ) : (
           <button
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/cadastro")}
             className="bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-primary-dark transition duration-300"
           >
             Criar Conta
