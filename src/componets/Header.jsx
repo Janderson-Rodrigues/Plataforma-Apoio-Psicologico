@@ -22,7 +22,7 @@ const Header = () => {
       </div>
       
       <div className='md:w-1/2 relative '>
-        <img className='w-full md:absolute bottom-0 h-auto roudend-lg' src={Psicologos} alt="" />
+        <img className='w-full bottom-0 h-auto roudend-lg' src={Psicologos} alt="" />
       </div>
     </div>
   )
