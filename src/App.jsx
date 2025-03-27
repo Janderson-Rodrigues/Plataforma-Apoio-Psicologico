@@ -17,7 +17,7 @@ import Cadastro from './pages/Cadastro'
 
 const App = () => {
   return ( 
-    <div className="mx-4 sm:-[10%]">
+    <div>
       <Navbar />
       <EntreEmContato />
       <Routes>
