@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import { NavLink, useNavigate } from "react-router-dom";
 import Perfil from "../images/perfil.png";
-import Logo from "../images/Logopsico.png";
 import Logos from "../images/logopsi.avif";
 
 const Navbar = () => {
@@ -11,7 +10,7 @@ const Navbar = () => {
   const [token, setToken] = useState(true); // Simulação de autenticação
 
   return (
-    <div className="flex items-center justify-between text-sm py-6 px-6 md:px-12 bg-white shadow-md">
+    <div className="flex items-center justify-between text-sm py-6 px-6 md:px-12 h-[10vh] bg-white shadow-md">
       {/* Logo */}
       <img
         className="w-44 cursor-pointer"
@@ -30,7 +29,7 @@ const Navbar = () => {
             }`
           }
         >
-          <li>HOME</li>
+          <li>INICIO</li>
         </NavLink>
 
         <NavLink
@@ -53,17 +52,6 @@ const Navbar = () => {
           }
         >
           <li>SOBRE</li>
-        </NavLink>
-
-        <NavLink
-          to="/administrador"
-          className={({ isActive }) =>
-            `py-2 hover:text-primary transition duration-300 ${
-              isActive ? "text-primary font-semibold" : "text-gray-700"
-            }`
-          }
-        >
-          <li>ADMINISTRADOR</li>
         </NavLink>
       </ul>
 
