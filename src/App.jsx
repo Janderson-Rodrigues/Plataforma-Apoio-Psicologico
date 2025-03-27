@@ -31,6 +31,7 @@ const App = () => {
         <Route path="/Perfil-Psicologo" element={<PsicologoPerfilPage />} />
         <Route path="/CadastroProfissional" element={<ProfissionalInf />} />
         <Route path="/CadastroPacient" element={<Anamese />} />
+        <Route path="/Login" element={<Login/>} />
       </Routes>
       <Footer />
     </div>
