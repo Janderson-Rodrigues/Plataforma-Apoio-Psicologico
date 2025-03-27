@@ -13,6 +13,7 @@ import EntreEmContato from "./componets/EntreEmContato";
 import PsicologoPerfilPage from "./pages/Perfilpsyco";
 import ProfissionalInf from './pages/ProfissionaisInf'
 import Anamese from './pages/Anamense'
+import Cadastro from './pages/Cadastro'
 
 const App = () => {
   return ( 
@@ -22,7 +23,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/psicologos" element={<Psicologos />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/meu-perfil" element={<Myprofile />} />
         <Route path="/my-appointment" element={<MyAppointment />} />
