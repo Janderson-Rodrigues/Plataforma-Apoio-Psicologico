@@ -1,37 +1,53 @@
-// src/services/usuarioService.js
-import api from './api';
+import api from './api'; // Importa a configuração central do Axios
 
-const UsuarioService = {
-  async listar() {
-    try {
-      const response = await api.get('/usuarios');
-      return response.data;
-    } catch (error) {
-      console.error("Erro ao listar usuários:", error);
-      throw error;
-    }
-  },
-
-  async criar(usuario) {
-    try {
-      const response = await api.post('/usuarios', usuario);
-      return response.data;
-    } catch (error) {
-      console.error("Erro ao criar usuário:", error);
-      throw error;
-    }
-  },
-
-  async login(credenciais) {
-    try {
-      const response = await api.post('/login', credenciais);
-      localStorage.setItem('token', response.data.token);
-      return response.data;
-    } catch (error) {
-      console.error("Erro ao fazer login:", error);
-      throw error;
-    }
+// Função para buscar todos os usuários
+const getUsuarios = async () => {
+  try {
+    const response = await api.get('/api/usuarios'); // Substitua '/users' pelo endpoint correto
+    return response.data;
+  } catch (error) {
+    console.error('Erro ao buscar usuários:', error);
+    throw error;
   }
 };
 
-export default UsuarioService;
+// Função para adicionar um novo usuário
+const addUsuario = async (usuarioData) => {
+  try {
+    const response = await api.post('/api/usuarios', usuarioData); // Substitua '/users' pelo endpoint correto
+    return response.data;
+  } catch (error) {
+    console.error('Erro ao adicionar usuário:', error);
+    throw error;
+  }
+};
+
+// Função para atualizar um usuário existente
+const updateUsuario = async (id, usuarioData) => {
+  try {
+    const response = await api.put(`/api/usuarios/${id}`, usuarioData); // Substitua '/users' pelo endpoint correto
+    return response.data;
+  } catch (error) {
+    console.error('Erro ao atualizar usuário:', error);
+    throw error;
+  }
+};
+
+// Função para remover um usuário
+const removeUsuario = async (id) => {
+  try {
+    await api.delete(`/api/usuarios/${id}`); // Substitua '/users' pelo endpoint correto
+  } catch (error) {
+    console.error('Erro ao remover usuário:', error);
+    throw error;
+  }
+};
+
+const userService = {
+  getUsuarios,
+  addUsuario,
+  updateUsuario,
+  removeUsuario,
+};
+
+export default userService;
