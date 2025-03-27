@@ -1,8 +1,5 @@
 import React from 'react';
 import grupo_psicologos from '../images/grupo_psicologos.jpg';
-import Header from '../componets/Header';
-import BotaoLogin from '../componets/BotaoLogin';
-
 
 const About = () => {
   return (
