@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import ImagemLogin from '../assets/Consulta_online.png';
 import FormaOrganica from '../assets/formaOrganica.png';
 
+
 const LoginPage = () => {
   const [formData, setFormData] = useState({
     email: '',
