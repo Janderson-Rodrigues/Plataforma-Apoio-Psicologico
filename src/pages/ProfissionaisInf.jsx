@@ -2,18 +2,17 @@ import React, { useState } from 'react';
 
 const ProfissionaisInf = () => {
   const [formData, setFormData] = useState({
-    nome: "",
-    especialidade: "",
-    localizacao: "",
-    valorAtendimento: "",
-    vagasDisponiveis: "",
-    faixaEtaria: "",
-    descricao: "",
+    name: "",
+    specialty: "",
+    location: "",
+    serviceValue: "",
+    freeSlots: "",
+    description: "",
   });
 
   const [errors, setErrors] = useState({});
 
-  const especialidades = [
+  const specialties = [
     "Psicologia Social",
     "Psicopedagogia",
     "Ansiedade",
@@ -21,7 +20,6 @@ const ProfissionaisInf = () => {
     "Psicologia Familiar",
     "Psicologia Organizacional e do Trabalho",
     "Psicologia Jurídica",
-    "Neuropsicologia"
   ];
 
   const handleChange = (e) => {
@@ -32,23 +30,23 @@ const ProfissionaisInf = () => {
     });
   };
 
-  const validarFormulario = () => {
-    const novosErros = {};
-    if (!formData.nome.trim()) novosErros.nome = "Nome é obrigatório";
-    if (!formData.especialidade) novosErros.especialidade = "Especialidade é obrigatória";
-    if (!formData.localizacao.trim()) novosErros.localizacao = "Localização é obrigatória";
-    if (!formData.valorAtendimento.trim()) novosErros.valorAtendimento = "Valor do atendimento é obrigatório";
-    if (!formData.vagasDisponiveis || formData.vagasDisponiveis < 0)
-      novosErros.vagasDisponiveis = "Digite um número válido (0 ou mais)";
-    return novosErros;
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = "Nome é obrigatório";
+    if (!formData.specialty) newErrors.specialty = "Especialidade é obrigatória";
+    if (!formData.location.trim()) newErrors.location = "Localização é obrigatória";
+    if (!formData.serviceValue.trim()) newErrors.serviceValue = "Valor do atendimento é obrigatório";
+    if (!formData.freeSlots || formData.freeSlots < 0)
+      newErrors.freeSlots = "Digite um número válido (0 ou mais)";
+    return newErrors;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const errosFormulario = validarFormulario();
+    const formErrors = validateForm();
     
-    if (Object.keys(errosFormulario).length > 0) {
-      setErrors(errosFormulario);
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
       return;
     }
 
@@ -56,13 +54,12 @@ const ProfissionaisInf = () => {
     alert("Perfil cadastrado com sucesso!");
     
     setFormData({
-      nome: "",
-      especialidade: "",
-      localizacao: "",
-      valorAtendimento: "",
-      vagasDisponiveis: "",
-      faixaEtaria: "",
-      descricao: "",
+      name: "",
+      specialty: "",
+      location: "",
+      serviceValue: "",
+      freeSlots: "",
+      description: "",
     });
     setErrors({});
   };
@@ -81,13 +78,17 @@ const ProfissionaisInf = () => {
             </label>
             <input
               type="text"
-              name="nome"
-              value={formData.nome}
+              name="name"
+              value={formData.name}
               onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md border-gray-300"
+              className={`mt-1 p-2 w-full border rounded-md ${
+                errors.name ? "border-red-500" : "border-gray-300"
+              }`}
               placeholder="Seu nome completo"
             />
-            {errors.nome && <p className="text-red-500 text-xs mt-1">{errors.nome}</p>}
+            {errors.name && (
+              <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+            )}
           </div>
 
           <div>
@@ -95,19 +96,23 @@ const ProfissionaisInf = () => {
               Especialidade *
             </label>
             <select
-              name="especialidade"
-              value={formData.especialidade}
+              name="specialty"
+              value={formData.specialty}
               onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md border-gray-300"
+              className={`mt-1 p-2 w-full border rounded-md ${
+                errors.specialty ? "border-red-500" : "border-gray-300"
+              }`}
             >
-              <option value="">Selecione uma especialidade</option>
-              {especialidades.map((espec) => (
-                <option key={espec} value={espec}>
-                  {espec}
+              <option value="">Selecione sua especialidade...</option>
+              {specialties.map((spec) => (
+                <option key={spec} value={spec}>
+                  {spec}
                 </option>
               ))}
             </select>
-            {errors.especialidade && <p className="text-red-500 text-xs mt-1">{errors.especialidade}</p>}
+            {errors.specialty && (
+              <p className="mt-1 text-sm text-red-600">{errors.specialty}</p>
+            )}
           </div>
 
           <div>
@@ -116,13 +121,17 @@ const ProfissionaisInf = () => {
             </label>
             <input
               type="text"
-              name="localizacao"
-              value={formData.localizacao}
+              name="location"
+              value={formData.location}
               onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md border-gray-300"
-              placeholder="Ex: São Paulo/SP"
+              className={`mt-1 p-2 w-full border rounded-md ${
+                errors.location ? "border-red-500" : "border-gray-300"
+              }`}
+              placeholder="Ex: São Paulo - SP"
             />
-            {errors.localizacao && <p className="text-red-500 text-xs mt-1">{errors.localizacao}</p>}
+            {errors.location && (
+              <p className="mt-1 text-sm text-red-600">{errors.location}</p>
+            )}
           </div>
 
           <div>
@@ -131,56 +140,50 @@ const ProfissionaisInf = () => {
             </label>
             <input
               type="text"
-              name="valorAtendimento"
-              value={formData.valorAtendimento}
+              name="serviceValue"
+              value={formData.serviceValue}
               onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md border-gray-300"
-              placeholder="Ex: R$ 100,00 por sessão"
+              className={`mt-1 p-2 w-full border rounded-md ${
+                errors.serviceValue ? "border-red-500" : "border-gray-300"
+              }`}
+              placeholder="Digite o valor do atendimento"
             />
-            {errors.valorAtendimento && <p className="text-red-500 text-xs mt-1">{errors.valorAtendimento}</p>}
+            {errors.serviceValue && (
+              <p className="mt-1 text-sm text-red-600">{errors.serviceValue}</p>
+            )}
           </div>
 
           <div>
             <label className="block text-sm font-medium text-gray-700">
-              Vagas Disponíveis *
+              Atendimentos Gratuitos Disponíveis *
             </label>
             <input
               type="number"
-              name="vagasDisponiveis"
-              value={formData.vagasDisponiveis}
+              name="freeSlots"
+              value={formData.freeSlots}
               onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md border-gray-300"
-              placeholder="Número de vagas disponíveis"
               min="0"
+              className={`mt-1 p-2 w-full border rounded-md ${
+                errors.freeSlots ? "border-red-500" : "border-gray-300"
+              }`}
+              placeholder="Quantidade de atendimentos gratuitos"
             />
-            {errors.vagasDisponiveis && <p className="text-red-500 text-xs mt-1">{errors.vagasDisponiveis}</p>}
+            {errors.freeSlots && (
+              <p className="mt-1 text-sm text-red-600">{errors.freeSlots}</p>
+            )}
           </div>
 
           <div>
             <label className="block text-sm font-medium text-gray-700">
-              Faixa Etária Atendida
-            </label>
-            <input
-              type="text"
-              name="faixaEtaria"
-              value={formData.faixaEtaria}
-              onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md border-gray-300"
-              placeholder="Ex: 18-25 anos, 26-40 anos, etc."
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700">
-              Descrição (Sobre você)
+              Descrição (Opcional)
             </label>
             <textarea
-              name="descricao"
-              value={formData.descricao}
+              name="description"
+              value={formData.description}
               onChange={handleChange}
-              className="mt-1 p-2 w-full border rounded-md border-gray-300"
-              placeholder="Fale um pouco sobre sua abordagem e experiência"
-              rows="4"
+              rows="3"
+              className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+              placeholder="Fale sobre sua experiência, abordagem, etc."
             />
           </div>
 
