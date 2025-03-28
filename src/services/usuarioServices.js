@@ -1,53 +1,70 @@
-import api from './api'; // Importa a configuração central do Axios
+// src/services/usuarioServices.js
+import api from './api';
 
-// Função para buscar todos os usuários
-const getUsuarios = async () => {
-  try {
-    const response = await api.get('/api/usuarios'); // Substitua '/users' pelo endpoint correto
-    return response.data;
-  } catch (error) {
-    console.error('Erro ao buscar usuários:', error);
-    throw error;
+const usuarioService = {
+  async listar() {
+    try {
+      const response = await api.get('/usuarios');
+      return response.data;
+    } catch (error) {
+      throw this.handleError(error);
+    }
+  },
+
+  async buscarPorId(id) {
+    try {
+      const response = await api.get(`/usuarios/${id}`);
+      return response.data;
+    } catch (error) {
+      throw this.handleError(error);
+    }
+  },
+
+  async criar(usuario) {
+    try {
+      const response = await api.post('/usuarios', usuario);
+      return response.data;
+    } catch (error) {
+      throw this.handleError(error);
+    }
+  },
+
+  async atualizar(id, dados) {
+    try {
+      const response = await api.put(`/usuarios/${id}`, dados);
+      return response.data;
+    } catch (error) {
+      throw this.handleError(error);
+    }
+  },
+
+  async remover(id) {
+    try {
+      const response = await api.delete(`/usuarios/${id}`);
+      return response.data;
+    } catch (error) {
+      throw this.handleError(error);
+    }
+  },
+
+  handleError(error) {
+    if (error.response) {
+      // Erros mapeados do backend
+      const messages = {
+        400: 'Dados inválidos',
+        401: 'Não autorizado',
+        404: 'Usuário não encontrado',
+        500: 'Erro no servidor'
+      };
+      
+      const message = error.response.data?.message || 
+                     messages[error.response.status] || 
+                     'Erro desconhecido';
+      
+      return new Error(message);
+    }
+    return new Error('Erro de conexão com o servidor');
   }
 };
 
-// Função para adicionar um novo usuário
-const addUsuario = async (usuarioData) => {
-  try {
-    const response = await api.post('/api/usuarios', usuarioData); // Substitua '/users' pelo endpoint correto
-    return response.data;
-  } catch (error) {
-    console.error('Erro ao adicionar usuário:', error);
-    throw error;
-  }
-};
-
-// Função para atualizar um usuário existente
-const updateUsuario = async (id, usuarioData) => {
-  try {
-    const response = await api.put(`/api/usuarios/${id}`, usuarioData); // Substitua '/users' pelo endpoint correto
-    return response.data;
-  } catch (error) {
-    console.error('Erro ao atualizar usuário:', error);
-    throw error;
-  }
-};
-
-// Função para remover um usuário
-const removeUsuario = async (id) => {
-  try {
-    await api.delete(`/api/usuarios/${id}`); // Substitua '/users' pelo endpoint correto
-  } catch (error) {
-    console.error('Erro ao remover usuário:', error);
-    throw error;
-  }
-};
-
-const userService = {
-  getUsuarios,
-  addUsuario,
-  updateUsuario,
-  removeUsuario,
-};
-
-export default userService;
+export default usuarioService;
