@@ -15,7 +15,7 @@ Gabriel Bezerra
 ## Equipe:
 - Luiz Felipe Martins de Araujo
 - Janderson Carneiro Rodrigues
-- Anildo 
+- Anildo da Silva Gomes
 
 
 # Técnologias Utilizadas
