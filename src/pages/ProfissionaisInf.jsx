@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProfissionaisInf = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     specialty: "",
@@ -53,6 +55,10 @@ const ProfissionaisInf = () => {
     console.log("Dados enviados:", formData);
     alert("Perfil cadastrado com sucesso!");
     
+    // Redireciona para a página /Perfil-Psicologo
+    navigate('/Perfil-Psicologo');
+    
+    // Limpa o formulário
     setFormData({
       name: "",
       specialty: "",
