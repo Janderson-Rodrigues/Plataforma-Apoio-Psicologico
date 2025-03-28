@@ -26,10 +26,6 @@ Gabriel Bezerra
 | Back-End  | Node, Prisma, Express, Axios, PostgresSQL |
 | Design    | Figma                                     |
 
-# Conheça Nossa Plataforma
-
-// Adicionar Prints
-
 # Como Executar
 
 ## Clonando o repositório
@@ -62,4 +58,8 @@ $ npm run dev
 | Felipe    | Front-End, Design   |
 | Janderson | Front-End, Back-End |
 | Anildo    | Front-End           |
+
+## Agradecimentos 
+
+Com o fim da parte teórica do curso estamos cheios de ânimo para os próximos desafios que virão em nossa jornada de desenvolvedores, não podemos deixar de agradecer pelo esforço de todos os envolvidos para que esse projeto seja possível, foram meses de muito aprendizado e evolução. Agradecemos especialmente a nossa professora Fernanda Nascimento que sempre se mostrou uma pessoa dedicada e comprometida com seu trabalho sempre guiando as aulas da melhor forma para nosso aprendizado, e a nosso facilitador Gabriel Bezerra que nos acompanhou durante boa parte do curso sempre disposto para nos ajudar, nossos colegas não ficam de fora pois é impossível não falar sobre a incrivel participação de todos nas aulas sincronas trazendo um ambiente imersivo e inspirador.
 
