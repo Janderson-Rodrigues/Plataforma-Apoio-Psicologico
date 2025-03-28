@@ -1,34 +1,29 @@
 import React, { useState } from 'react';
 
 const ProfissionaisInf = () => {
-  // Estados para os campos do formulário
   const [formData, setFormData] = useState({
-    name: "",
-    specialty: "",
-    location: "",
-    serviceType: "",
-    freeSlots: "",
-    description: "",
+    nome: "",
+    especialidade: "",
+    localizacao: "",
+    valorAtendimento: "",
+    vagasDisponiveis: "",
+    faixaEtaria: "",
+    descricao: "",
   });
 
   const [errors, setErrors] = useState({});
 
-  // Opções para selects/radios - CORREÇÃO DO ERRO specialties is not defined
-  const specialties = [
-    "Cardiologista",
-    "Pediatra",
-    "Dentista",
-    "Advogado",
-    "Psicólogo",
-    "Professor",
-    "Nutricionista",
-    "Fisioterapeuta",
-    "Personal Trainer"
+  const especialidades = [
+    "Psicologia Social",
+    "Psicopedagogia",
+    "Ansiedade",
+    "Depressão",
+    "Psicologia Familiar",
+    "Psicologia Organizacional e do Trabalho",
+    "Psicologia Jurídica",
+    "Neuropsicologia"
   ];
 
-  const serviceTypes = ["Presencial", "Online", "Híbrido"];
-
-  // Manipula mudanças nos inputs
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -37,40 +32,37 @@ const ProfissionaisInf = () => {
     });
   };
 
-  // Validação simples
-  const validateForm = () => {
-    const newErrors = {};
-    if (!formData.name.trim()) newErrors.name = "Nome é obrigatório";
-    if (!formData.specialty) newErrors.specialty = "Especialidade é obrigatória";
-    if (!formData.location.trim()) newErrors.location = "Localização é obrigatória";
-    if (!formData.serviceType) newErrors.serviceType = "Selecione um tipo de atendimento";
-    if (!formData.freeSlots || formData.freeSlots < 0)
-      newErrors.freeSlots = "Digite um número válido (0 ou mais)";
-    return newErrors;
+  const validarFormulario = () => {
+    const novosErros = {};
+    if (!formData.nome.trim()) novosErros.nome = "Nome é obrigatório";
+    if (!formData.especialidade) novosErros.especialidade = "Especialidade é obrigatória";
+    if (!formData.localizacao.trim()) novosErros.localizacao = "Localização é obrigatória";
+    if (!formData.valorAtendimento.trim()) novosErros.valorAtendimento = "Valor do atendimento é obrigatório";
+    if (!formData.vagasDisponiveis || formData.vagasDisponiveis < 0)
+      novosErros.vagasDisponiveis = "Digite um número válido (0 ou mais)";
+    return novosErros;
   };
 
-  // Submit do formulário
   const handleSubmit = (e) => {
     e.preventDefault();
-    const formErrors = validateForm();
+    const errosFormulario = validarFormulario();
     
-    if (Object.keys(formErrors).length > 0) {
-      setErrors(formErrors);
+    if (Object.keys(errosFormulario).length > 0) {
+      setErrors(errosFormulario);
       return;
     }
 
-    // Simula envio (substitua por uma API real)
     console.log("Dados enviados:", formData);
     alert("Perfil cadastrado com sucesso!");
     
-    // Reseta o formulário
     setFormData({
-      name: "",
-      specialty: "",
-      location: "",
-      serviceType: "",
-      freeSlots: "",
-      description: "",
+      nome: "",
+      especialidade: "",
+      localizacao: "",
+      valorAtendimento: "",
+      vagasDisponiveis: "",
+      faixaEtaria: "",
+      descricao: "",
     });
     setErrors({});
   };
@@ -83,133 +75,115 @@ const ProfissionaisInf = () => {
         </h1>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Nome */}
           <div>
             <label className="block text-sm font-medium text-gray-700">
               Nome Completo *
             </label>
             <input
               type="text"
-              name="name"
-              value={formData.name}
+              name="nome"
+              value={formData.nome}
               onChange={handleChange}
-              className={`mt-1 p-2 w-full border rounded-md ${
-                errors.name ? "border-red-500" : "border-gray-300"
-              }`}
+              className="mt-1 p-2 w-full border rounded-md border-gray-300"
               placeholder="Seu nome completo"
             />
-            {errors.name && (
-              <p className="mt-1 text-sm text-red-600">{errors.name}</p>
-            )}
+            {errors.nome && <p className="text-red-500 text-xs mt-1">{errors.nome}</p>}
           </div>
 
-          {/* Especialidade */}
           <div>
             <label className="block text-sm font-medium text-gray-700">
               Especialidade *
             </label>
             <select
-              name="specialty"
-              value={formData.specialty}
+              name="especialidade"
+              value={formData.especialidade}
               onChange={handleChange}
-              className={`mt-1 p-2 w-full border rounded-md ${
-                errors.specialty ? "border-red-500" : "border-gray-300"
-              }`}
+              className="mt-1 p-2 w-full border rounded-md border-gray-300"
             >
-              <option value="">Selecione sua especialidade...</option>
-              {specialties.map((spec) => (
-                <option key={spec} value={spec}>
-                  {spec}
+              <option value="">Selecione uma especialidade</option>
+              {especialidades.map((espec) => (
+                <option key={espec} value={espec}>
+                  {espec}
                 </option>
               ))}
             </select>
-            {errors.specialty && (
-              <p className="mt-1 text-sm text-red-600">{errors.specialty}</p>
-            )}
+            {errors.especialidade && <p className="text-red-500 text-xs mt-1">{errors.especialidade}</p>}
           </div>
 
-          {/* Localização */}
           <div>
             <label className="block text-sm font-medium text-gray-700">
               Localização (Cidade/Estado) *
             </label>
             <input
               type="text"
-              name="location"
-              value={formData.location}
+              name="localizacao"
+              value={formData.localizacao}
               onChange={handleChange}
-              className={`mt-1 p-2 w-full border rounded-md ${
-                errors.location ? "border-red-500" : "border-gray-300"
-              }`}
-              placeholder="Ex: São Paulo - SP"
+              className="mt-1 p-2 w-full border rounded-md border-gray-300"
+              placeholder="Ex: São Paulo/SP"
             />
-            {errors.location && (
-              <p className="mt-1 text-sm text-red-600">{errors.location}</p>
-            )}
+            {errors.localizacao && <p className="text-red-500 text-xs mt-1">{errors.localizacao}</p>}
           </div>
 
-          {/* Tipo de Atendimento */}
           <div>
             <label className="block text-sm font-medium text-gray-700">
-              Tipo de Atendimento *
+              Valor do Atendimento *
             </label>
-            <div className="mt-2 space-y-2">
-              {serviceTypes.map((type) => (
-                <label key={type} className="inline-flex items-center">
-                  <input
-                    type="radio"
-                    name="serviceType"
-                    value={type}
-                    checked={formData.serviceType === type}
-                    onChange={handleChange}
-                    className="h-4 w-4 text-blue-600"
-                  />
-                  <span className="ml-2 text-gray-700">{type}</span>
-                </label>
-              ))}
-            </div>
-            {errors.serviceType && (
-              <p className="mt-1 text-sm text-red-600">{errors.serviceType}</p>
-            )}
+            <input
+              type="text"
+              name="valorAtendimento"
+              value={formData.valorAtendimento}
+              onChange={handleChange}
+              className="mt-1 p-2 w-full border rounded-md border-gray-300"
+              placeholder="Ex: R$ 100,00 por sessão"
+            />
+            {errors.valorAtendimento && <p className="text-red-500 text-xs mt-1">{errors.valorAtendimento}</p>}
           </div>
 
-          {/* Atendimentos Gratuitos */}
           <div>
             <label className="block text-sm font-medium text-gray-700">
-              Atendimentos Gratuitos Disponíveis *
+              Vagas Disponíveis *
             </label>
             <input
               type="number"
-              name="freeSlots"
-              value={formData.freeSlots}
+              name="vagasDisponiveis"
+              value={formData.vagasDisponiveis}
               onChange={handleChange}
+              className="mt-1 p-2 w-full border rounded-md border-gray-300"
+              placeholder="Número de vagas disponíveis"
               min="0"
-              className={`mt-1 p-2 w-full border rounded-md ${
-                errors.freeSlots ? "border-red-500" : "border-gray-300"
-              }`}
-              placeholder="Quantidade de atendimentos gratuitos"
             />
-            {errors.freeSlots && (
-              <p className="mt-1 text-sm text-red-600">{errors.freeSlots}</p>
-            )}
+            {errors.vagasDisponiveis && <p className="text-red-500 text-xs mt-1">{errors.vagasDisponiveis}</p>}
           </div>
 
-          {/* Descrição */}
           <div>
             <label className="block text-sm font-medium text-gray-700">
-              Descrição (Opcional)
+              Faixa Etária Atendida
             </label>
-            <textarea
-              name="description"
-              value={formData.description}
+            <input
+              type="text"
+              name="faixaEtaria"
+              value={formData.faixaEtaria}
               onChange={handleChange}
-              rows="3"
-              className="mt-1 p-2 w-full border border-gray-300 rounded-md"
-              placeholder="Fale sobre sua experiência, abordagem, etc."
+              className="mt-1 p-2 w-full border rounded-md border-gray-300"
+              placeholder="Ex: 18-25 anos, 26-40 anos, etc."
             />
           </div>
 
-          {/* Botão de Submit */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700">
+              Descrição (Sobre você)
+            </label>
+            <textarea
+              name="descricao"
+              value={formData.descricao}
+              onChange={handleChange}
+              className="mt-1 p-2 w-full border rounded-md border-gray-300"
+              placeholder="Fale um pouco sobre sua abordagem e experiência"
+              rows="4"
+            />
+          </div>
+
           <div>
             <button
               type="submit"
